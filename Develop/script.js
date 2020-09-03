@@ -49,22 +49,22 @@ function generatePassword() {
   var specialCharacter = "!@#$%^&*()_+{}[]?><,.~";
 
   //Make an empty string that holds random characters given the users prompt response
-  var charAvailable = "";
+  var charAvailable = [];
 
   //Make if === true statements for each case, then add to string
   if (upperCased === true) {
-    charAvailable = charAvailable.concat(upperCased);
+    charAvailable = charAvailable.push(upperCased);
   }
   if (lowerCased === true) {
-    charAvailable = charAvailable.concat(lowerCased);
+    charAvailable = charAvailable.push(lowerCased);
   }
 
   if (numbers === true) {
-    charAvailable = charAvailable.concat(numbers);
+    charAvailable = charAvailable.push(numbers);
   }
 
   if (specialCharacters === true) {
-    charAvailable = charAvailable.concat(specialCharacters);
+    charAvailable = charAvailable.push(specialCharacters);
   }
 
   if (
@@ -79,9 +79,12 @@ function generatePassword() {
   }
 
   //Make Variable called Result
-  var finalResult = "";
+  var finalResult = [];
 
   //Make for loop to loop over charAvailable, use length of userPrompt
+  for (var i = 0; i < userPrompt.length; i++) {
+    finalResult = 
+  }
 }
 
 // Add event listener to generate button
