@@ -15,6 +15,20 @@ function generatePassword() {
   //make var for user prompt
   var userPrompt = prompt("How many characters would you like your password to be?");
   console.log(userPrompt)
+
+  //Need if/else statement for telling user to pick number between lower case
+  if (userPrompt < 8 || userPrompt > 128) {
+    alert("Number must be between 8 and 128")
+  }
+
+  //Make variable called upperCased letters
+  var upperCased = confirm("Do you want uppercase letters?")
+  console.log(upperCased)
+
+  //Make variable called lowerCased letters
+  var lowerCased = confirm("Do you want lowercse letters?")
+  console.log(lowerCased)
+
 }
 
 // Add event listener to generate button
