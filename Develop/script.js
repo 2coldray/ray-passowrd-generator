@@ -12,7 +12,9 @@ function writePassword() {
 
 //Define Function generatePassword();
 function generatePassword() {
-  
+  //make var for user prompt
+  var userPrompt = prompt("How many characters would you like your password to be?");
+  console.log(userPrompt)
 }
 
 // Add event listener to generate button
