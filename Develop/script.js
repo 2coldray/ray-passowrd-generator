@@ -43,20 +43,20 @@ function generatePassword() {
   console.log(specialCharacters);
 
   //Make array with just lowercase, uppercase, numbers, and special characters
-  var lowerCase = "abcdefghijklmnopqrstuvwxyz";
-  var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var numbers = "1234567890";
-  var specialCharacter = "!@#$%^&*()_+{}[]?><,.~";
+  var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p","q","s","t","v","w","y","z"];
+  var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "S", "T", "V", "Y", "Z"];
+  var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  var specialCharacter = ["!", "@", "#", "$", "@", "*"];
 
   //Make an empty string that holds random characters given the users prompt response
   var charAvailable = [];
 
   //Make if === true statements for each case, then add to string
   if (upperCased === true) {
-    charAvailable = charAvailable.push(upperCased);
+    charAvailable = charAvailable.push(upperCase);
   }
   if (lowerCased === true) {
-    charAvailable = charAvailable.push(lowerCased);
+    charAvailable = charAvailable.push(lowerCase);
   }
 
   if (numbers === true) {
@@ -64,7 +64,7 @@ function generatePassword() {
   }
 
   if (specialCharacters === true) {
-    charAvailable = charAvailable.push(specialCharacters);
+    charAvailable = charAvailable.push(specialCharacter);
   }
 
   if (
@@ -83,7 +83,7 @@ function generatePassword() {
 
   //Make for loop to loop over charAvailable, use length of userPrompt
   for (var i = 0; i < userPrompt.length; i++) {
-    finalResult = 
+    finalResult = final
   }
 }
 
