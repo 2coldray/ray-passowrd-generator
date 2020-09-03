@@ -20,6 +20,10 @@ function generatePassword() {
   //Need if/else statement for telling user to pick number between lower case
   if (userPrompt < 8 || userPrompt > 128) {
     alert("Number must be between 8 and 128");
+    var newPrompt = prompt(
+      "How many characters would you like? Choose number between 8 and 128"
+    );
+    console.log(newPrompt);
   }
 
   //Make variable called upperCased letters
@@ -50,14 +54,28 @@ function generatePassword() {
   //Make if === true statements for each case, then add to string
   if (upperCased === true) {
     charAvailable = charAvailable.concat(upperCased);
-  } else if (lowerCased === true) {
+  }
+  if (lowerCased === true) {
     charAvailable = charAvailable.concat(lowerCased);
-  } else if (numbers === true) {
+  }
+
+  if (numbers === true) {
     charAvailable = charAvailable.concat(numbers);
-  } else if (specialCharacters === true) {
+  }
+
+  if (specialCharacters === true) {
     charAvailable = charAvailable.concat(specialCharacters);
-  } else {
-    alert("Must choose at least one character type");
+  }
+
+  if (
+    upperCased === false &&
+    lowerCased === false &&
+    numCharacters === false &&
+    specialCharacters === false
+  ) {
+    alert(
+      "Can't Generate Password. Must choose at least 1 character type to make password"
+    );
   }
 
   //Make Variable called Result
