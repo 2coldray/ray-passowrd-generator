@@ -53,18 +53,22 @@ function generatePassword() {
 
   //Make if === true statements for each case, then add to string
   if (upperCased === true) {
-    charAvailable = charAvailable.push(upperCase);
+    charAvailable = charAvailable.concat(upperCase);
+ 
   }
   if (lowerCased === true) {
-    charAvailable = charAvailable.push(lowerCase);
+    charAvailable = charAvailable.concat(lowerCase);
+
   }
 
   if (numbers === true) {
-    charAvailable = charAvailable.push(numbers);
+    charAvailable = charAvailable.concat(numbers);
+
   }
 
   if (specialCharacters === true) {
-    charAvailable = charAvailable.push(specialCharacter);
+    charAvailable = charAvailable.concat(specialCharacter);
+
   }
 
   if (
@@ -83,8 +87,14 @@ function generatePassword() {
 
   //Make for loop to loop over charAvailable, use length of userPrompt
   for (var i = 0; i < userPrompt.length; i++) {
-    finalResult = final
+    var randomAmount = Math.floor(Math.random() * charAvailable.length);
+    var randomIndex = charAvailable[randomAmount];
+    finalResult = finalResult +=randomIndex;
+    return finalResult;
+    
   }
+
+ 
 }
 
 // Add event listener to generate button
