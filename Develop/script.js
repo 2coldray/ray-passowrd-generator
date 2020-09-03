@@ -29,6 +29,14 @@ function generatePassword() {
   var lowerCased = confirm("Do you want lowercse letters?")
   console.log(lowerCased)
 
+  //Make variable called numbers
+  var numCharacters = confirm("Do you want numeric characters?")
+  console.log(numCharacters)
+
+  //Make variable called special characters
+  var specialCharacters = confirm("Do you want special characters?")
+  console.log(specialCharacters)
+
 }
 
 // Add event listener to generate button
