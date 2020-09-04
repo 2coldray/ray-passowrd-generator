@@ -24,21 +24,27 @@ The password generator web application generates a random password of a length b
 ## Usage
 
 This is the home screen of the application. The password will appear in the prompt.
+
 ![Screen Shot 2020-09-03 at 8 10 43 PM](https://user-images.githubusercontent.com/60899926/92186403-a6080c00-ee24-11ea-8f75-ad4ca5b4c8ce.png)
 
 This question asks how long you want the password to be.
+
 ![Screen Shot 2020-09-03 at 8 10 58 PM](https://user-images.githubusercontent.com/60899926/92185605-5e808080-ee22-11ea-84f3-9f01f16f28e3.png)
 
 Uppercase letters prompt
+
 ![Screen Shot 2020-09-03 at 8 11 10 PM](https://user-images.githubusercontent.com/60899926/92185655-7bb54f00-ee22-11ea-82b5-733b44790d93.png)
 
 Lowercase letters prompt
+
 ![Screen Shot 2020-09-03 at 8 11 18 PM](https://user-images.githubusercontent.com/60899926/92185672-8b349800-ee22-11ea-884e-0531f5ebd1d3.png)
 
 Numbers prompt
+
 ![Screen Shot 2020-09-03 at 8 11 27 PM](https://user-images.githubusercontent.com/60899926/92185709-9ab3e100-ee22-11ea-8454-5e339fd0d590.png)
 
 Special Characters prompt
+
 ![Screen Shot 2020-09-03 at 8 11 35 PM](https://user-images.githubusercontent.com/60899926/92185724-a69fa300-ee22-11ea-9051-0dc346de4584.png)
 
 ## Credits
